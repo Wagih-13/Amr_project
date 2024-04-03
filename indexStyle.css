@@ -1,0 +1,53 @@
+:root {
+  --main-color: #092635;
+  --second-color: #1b4242;
+  --text-color: rgb(224, 224, 224);
+  --text-font: 15px;
+}
+body {
+  background-color: var(--main-color);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 100px 0px;
+  position: relative;
+}
+
+.container .card {
+  background-color: var(--second-color);
+  overflow: hidden;
+}
+
+.container .card p {
+  padding: 20px;
+  color: var(--text-color);
+  font-size: var(--text-font);
+}
+.container .card span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.192);
+  backdrop-filter: blur(10px);
+}
+
+.container .card span i {
+  font-size: 20px;
+  color: yellow;
+  margin-right: 4px;
+}
+.paginations {
+  padding: 0px 0px 40px;
+}
+.paginations ul .page-link {
+  cursor: pointer;
+}
